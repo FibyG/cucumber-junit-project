@@ -41,6 +41,7 @@ public class WikiSearch_StepDef {
 
     @Then("User sees {string} is in the wiki title")
     public void user_sees_is_in_the_wiki_title(String string) {
+
         Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
     }
 
